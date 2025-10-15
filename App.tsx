@@ -502,7 +502,7 @@ export default function App() {
     const rightColumnProjects = portfolioData.filter((_, index) => index % 2 !== 0);
     
     return (
-        <div className="bg-[#f3f3f3]">
+        <div className="bg-black">
             <Sidebar onMenuOpen={() => setIsMenuOpen(true)} />
             <OffCanvasMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
             
@@ -537,9 +537,9 @@ export default function App() {
                     <Marquee items={marqueeItems} />
 
                     {/* About Section */}
-                    <section id="about" className="py-20 px-6 lg:px-20 text-center">
+                    <section id="about" className="bg-[#121212] text-white py-20 px-6 lg:px-20 text-center">
                         <AnimatedCharText text="Get Your Website From Experienced Developers!" className="text-4xl md:text-5xl font-bold font-kanit max-w-4xl mx-auto mb-6" />
-                        <AnimatedFadeIn className="max-w-3xl mx-auto text-gray-600 mb-10 text-lg">
+                        <AnimatedFadeIn className="max-w-3xl mx-auto text-gray-400 mb-10 text-lg">
                             <p>Welcome to<strong> Zhovon</strong>, your <strong>trusted digital marketing agency</strong> dedicated to transforming brands through innovative digital marketing solutions. Whether you’re a startup looking to build your online presence or an established<strong> business</strong> aiming to scale, we deliver tailored strategies that drive results.</p>
                         </AnimatedFadeIn>
                         <AnimatedFadeIn>
